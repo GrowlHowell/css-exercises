@@ -15,6 +15,32 @@ body {
   justify-content: center;
 }
 
+.container-1,
+.container-2,
+.container-3,
+.container-4 {
+  display: flex;
+}
+
+.container-1 {
+  padding: 15px;
+  gap: 20px;
+}
+
+.container-2 {
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container-3 {
+  justify-content: space-between;
+}
+
+.container-4 {
+  gap: 5px;
+}
+
 .modal {
   background: white;
   width: 480px;
@@ -31,8 +57,14 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 1.25em;
 }
 
 .close-button {
